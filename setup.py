@@ -29,7 +29,7 @@ if os.path.exists(os.path.join(download_dir, "download.py")) and os.path.exists(
     # Demander à l'utilisateur s'il souhaite désinstaller le fichier setup.py
     response = input("Souhaitez-vous désinstaller le fichier setup.py ? (y/n) ")
     if response.lower() == "y":
-        os.remove(os.path.join(os.getcwd(), "setup.py"))
+        os.remove(os.path.join(os.path.dirname(os.path.abspath(__file__)), "setup.py"))
     else:
         exit()
 else:
