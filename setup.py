@@ -15,4 +15,4 @@ else:
         os.mkdir(os.path.join(download_dir, "data"))
 
 # Télécharger le fichier Python à partir de GitHub
-os.system("wget https://raw.githubusercontent.com/user/repo/branch/download.py -P " + download_dir)
+os.system("wget https://github.com/MrFlappy0/Youtube-downloader/releases/download/Base/download.py" + download_dir)
